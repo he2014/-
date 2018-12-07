@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+/*CSS reset*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+textarea,
+select,
+button,
+p,
+span,
+img,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+body {
+    background: #f5f8fa;
+}
+
+
+/*html5*/
+
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details {
+    display: block;
+}
+
+
+/* 重置盒子模型 */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+button,
+input {
+    border: none;
+    background-color: none;
+    cursor: pointer;
+}
+
+
+/*修改输入框placeholder文字默认颜色 v4*/
+
+input::input-,
+textarea::input-placeholder {
+    font-size: 12px;
+    color: #999;
+}
+
+input,
+textarea {
+    color: #333;
+    color: #999;
+}
+
+
+/*去除Chrome等浏览器文本框默认发光边框*/
+
+input,
+button,
+select,
+textarea {
+    outline: none;
+}
+
+
+/*去除IE10+浏览器文本框后面的小叉叉*/
+
+input::clear,
+input::reveal,
+input::-ms-clear,
+input::-ms-reveal {
+    display: none;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    /* height: auto; */
+    border: none;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+}
+
+em,
+i,
+b {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+li {
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+
+/*v4 除去a IE点击虚线*/
+
+a,
+area,
+button {
+    outline: none;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+/* a:active,
+area:active,
+button:active {
+     blr: expression_r(this.onFocus=this.blur()); 
+}*/
+
+a:focus,
+area:focus,
+button:focus,
+input:focus {
+    outline: 0;
+}
+
+a:hover {
+    /* color: #3f57a1; */
+    text-decoration: none;
+}
+
+.fullPage {
+    width: 100%;
+}
+
+.page {
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 1200px;
+    width: 1200px;
+}
+
+
+/*表单重置*/
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+    /* padding: 10px 5px 8px; */
+    /* height: auto; */
+    background-color: #fff;
+}
+
+
+/*禁止多行文本框textarea拖拽*/
+
+textarea {
+    resize: none;
+}
+html,
+body,
+#app,
+.login{
+  height: 100%
+}
+.login{
+  display: flex;
+  flex-direction: column
+}
+.login-form{
+  flex: 1
+}
